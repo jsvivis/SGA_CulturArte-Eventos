@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background-color: #66aea6
     /* Define o espaçamento entre EventList e Calendar */
 }
 
@@ -15,12 +16,14 @@
     margin-bottom: 20px;
     margin-left: 10px;
     padding: 20px;
+    background-color: #66aea6
 }
 
 .calendar {
     margin-top: -20px;
     margin-left: 10px;
     padding: 20px;
+    background-color: #66aea6
 }
 
 .big-calendar {

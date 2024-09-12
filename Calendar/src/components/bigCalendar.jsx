@@ -193,7 +193,6 @@ const BigCalendarComponent = ({ selectedDate }) => {
     setCurrentDate(newDate); 
   };
 
-
  const fetchEspacos = async (idEspacoCultural) => {
   try {
     const response = await axios.get(`http://localhost:3000/espaco/${idEspacoCultural}`);
@@ -236,6 +235,7 @@ tomorrow: 'Amanhã',
 today: 'Hoje',
 agenda: 'Agenda',
 noEventsInRange: 'Não há eventos neste intervalo.',
+locale: 'pt-BR',
 showMore: total => `+${total} mais`,
 };
 
@@ -361,12 +361,14 @@ showMore: total => `+${total} mais`,
           startAccessor="start"
           endAccessor="end"
           defaultView="month"
-          views={['day', 'week', 'month']}
+          views={['day', 'week', 'month',]}
           selectable
           step={15} // Intervalo de minutos entre os slots de tempo
           timeslots={4} 
           onSelectSlot={handleSelectSlot}
           onSelectEvent={handleSelectEvent}
+          onChange={handleDateChange}
+          locale="pt-BR"  
           eventPropGetter={(event) => ({
             style: {
               backgroundColor: event.categoriaCor || '#00695f', // Cor padrão

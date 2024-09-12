@@ -53,7 +53,8 @@ export default function Navbar() {
             justifyContent: 'center',
           }}
         >
-          <Link 
+          <div>
+          <Link
             to="/"
             style={{
               color: '#000',
@@ -64,7 +65,7 @@ export default function Navbar() {
             }}
           >
             AGENDA CULTURAL
-          </Link>
+          </Link></div>
         </Typography>
         {user && (
           <Box sx={{ display: 'flex', alignItems: 'center', ml: 'auto', mr: 6, fontWeight:"fontWeightBold"}}>
