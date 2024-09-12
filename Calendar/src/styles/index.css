@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Glagolitic&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Glagolitic&family=Signika:wght@300..700&family=Varela+Round&display=swap');
+
+:root {
+    --white-back: #f8f9fa;
+    --black: #000000;
+}

@@ -1,0 +1,29 @@
+.body-home {
+    display: flex;
+
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Define o espaçamento entre EventList e Calendar */
+}
+
+.event-list {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+.calendar {
+    margin-top: -20px;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+.big-calendar {
+    width: 100%;
+    margin-top: -40px;
+}
