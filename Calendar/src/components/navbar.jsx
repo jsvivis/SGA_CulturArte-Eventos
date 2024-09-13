@@ -5,6 +5,7 @@ import { Box, Typography, IconButton, CssBaseline } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import HandymanIcon from '@mui/icons-material/Handyman';
 import { Button } from '@mui/material';
+import logo from '../../public/agendalogo.png';
 
 
 const theme = createTheme({
@@ -44,6 +45,14 @@ export default function Navbar() {
           p: 0,
         }}
       >
+           {/* Box da imagem da logo e do texto */}
+           <Box sx={{ display: 'flex', alignItems: 'center', marginLeft: '30px' }}>
+          <img 
+            src={logo} 
+            alt="Logo Agenda Cultural" 
+            style={{ width: '76px', marginTop: '4px' }} 
+          />
+
         <Typography
           variant="h3"
           component="h1"
@@ -60,13 +69,14 @@ export default function Navbar() {
               color: '#000',
               textDecoration: 'none',
               fontFamily: 'Varela Round',
-              marginLeft: '60px',
+              marginLeft: '10px',
               fontWeight:"fontWeightBold",
             }}
           >
             AGENDA CULTURAL
           </Link></div>
         </Typography>
+        </Box>
         {user && (
           <Box sx={{ display: 'flex', alignItems: 'center', ml: 'auto', mr: 6, fontWeight:"fontWeightBold"}}>
             <Typography variant="bold" sx={{ color: '#000', mr: 3}}>

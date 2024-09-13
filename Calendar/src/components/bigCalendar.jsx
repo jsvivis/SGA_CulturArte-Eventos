@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Calendar as BigCalendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
-import "moment/locale/pt-BR";
+import 'moment/locale/pt-BR';
+moment.locale('pt-BR');
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import {
   Container,
@@ -162,7 +163,7 @@ const BigCalendarComponent = ({ selectedDate }) => {
       return ''; // Retorna uma string vazia se a data for nula
     }
     const dateObj = new Date(dateTimeString);
-    return dateObj.toISOString().slice(0, 16); // Formato 'yyyy-MM-ddThh:mm'
+    return dateObj.toISOString().slice(0, 16); // Formato 'dd-MM-yyyy Thh:mm'
   };
 
   const handleChange = (event) => {
@@ -218,7 +219,7 @@ const BigCalendarComponent = ({ selectedDate }) => {
     });
     setOpen(true);
   };
-
+  const localizer = momentLocalizer(moment);
   const messages = {
 date: 'Data',
 time: 'Hora',
@@ -236,6 +237,7 @@ today: 'Hoje',
 agenda: 'Agenda',
 noEventsInRange: 'Não há eventos neste intervalo.',
 locale: 'pt-BR',
+culture:'pt-BR',
 showMore: total => `+${total} mais`,
 };
 

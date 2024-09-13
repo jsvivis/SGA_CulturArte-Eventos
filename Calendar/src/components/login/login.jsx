@@ -32,10 +32,10 @@ const Login = () => {
   };
 
   return (
-    <Box display="flex" justifyContent="center" alignItems="center" height="80vh" bgcolor="#fff">
+    <Box display="flex" justifyContent="center" alignItems="center" height="88vh" bgcolor="#66aea6">
       <Paper elevation={3} style={{ padding: '40px', borderRadius: '8px', maxWidth: '500px', width: '100%'}}>
         <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" >
-          <Avatar sx={{ m: 1, bgcolor: 'success.main' }}>
+          <Avatar sx={{ m: 1, bgcolor: '#66aea6' }}>
             <LockOutlinedIcon />
           </Avatar>
           <Typography variant="h4" gutterBottom align="center">
@@ -87,7 +87,7 @@ const Login = () => {
             variant="contained"
             color="primary"
             fullWidth
-            style={{ padding: '10px' }}
+            style={{ padding: '10px', backgroundColor: '#00695f'}}
           >
             Entrar
           </Button>
