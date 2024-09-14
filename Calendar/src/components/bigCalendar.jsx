@@ -1,9 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Calendar as BigCalendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
-import 'moment/locale/pt-BR';
-moment.locale('pt-BR');
+import 'moment/locale/pt-BR'
+import withDragAndDrop from 'react-big-calendar/lib/addons/dragAndDrop';
+import "react-big-calendar/lib/css/react-big-calendar.css";
+import "react-big-calendar/lib/addons/dragAndDrop/styles.css";
+import "react-big-calendar/lib/css/react-big-calendar.css";
+import "react-big-calendar/lib/addons/dragAndDrop/styles.css";
+// moment.locale('pt-BR');
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import {
   Container,
@@ -219,6 +224,8 @@ const BigCalendarComponent = ({ selectedDate }) => {
     });
     setOpen(true);
   };
+
+  moment.locale("pt-BR")
   const localizer = momentLocalizer(moment);
   const messages = {
 date: 'Data',
@@ -239,8 +246,14 @@ noEventsInRange: 'Não há eventos neste intervalo.',
 locale: 'pt-BR',
 culture:'pt-BR',
 showMore: total => `+${total} mais`,
+Sun: 'Dom',
+Mon: 'Seg',
+Tue: 'Ter',
+Wed: 'Qua',
+Thu: 'Qui',
+Fri: 'Sex',
+Sat: 'Sáb'
 };
-
 
   const handleSelectEvent = async (event) => {
     setCurrentEvent(event);
@@ -357,6 +370,7 @@ showMore: total => `+${total} mais`,
       <Box sx={{ mt: 3, width: '100%', }}>
         <Box sx={{ height: 715, mt: 3 }}>
         <BigCalendar
+         messages={messages}
         defaultDate={currentDate}
           localizer={localizer}
           events={filteredEvents}
@@ -370,7 +384,7 @@ showMore: total => `+${total} mais`,
           onSelectSlot={handleSelectSlot}
           onSelectEvent={handleSelectEvent}
           onChange={handleDateChange}
-          locale="pt-BR"  
+          // locale="pt-BR"  
           eventPropGetter={(event) => ({
             style: {
               backgroundColor: event.categoriaCor || '#00695f', // Cor padrão
