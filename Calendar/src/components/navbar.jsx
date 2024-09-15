@@ -5,7 +5,7 @@ import { Box, Typography, IconButton, CssBaseline } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import HandymanIcon from '@mui/icons-material/Handyman';
 import { Button } from '@mui/material';
-import logo from '../../public/CulturArte.png';
+import logo from '../../public/CulturArte2.png';
 import { format } from 'mysql';
 
 
@@ -51,7 +51,7 @@ export default function Navbar() {
           <img 
             src={logo} 
             alt="CulturArte Logo" 
-            style={{ width: '208px', marginTop: '3px' }} 
+            style={{ width: '210px', marginTop: '3px' }} 
           />
 
         <Typography
@@ -75,7 +75,7 @@ export default function Navbar() {
               fontSize: '68px'
             }}
           >
-            CulturArte Agenda
+            Agenda CulturArte
           </Link></div>
         </Typography>
         </Box>
