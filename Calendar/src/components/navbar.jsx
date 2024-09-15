@@ -40,7 +40,7 @@ export default function Navbar() {
           justifyContent: 'space-between',
           alignItems: 'center',
           width: '100%',
-          height: '100px',
+          height: '105px',
           backgroundColor: '#66aea6',
           m: 0,
           p: 0,
@@ -51,7 +51,7 @@ export default function Navbar() {
           <img 
             src={logo} 
             alt="CulturArte Logo" 
-            style={{ width: '220px', marginTop: '3px' }} 
+            style={{ width: '208px', marginTop: '3px' }} 
           />
 
         <Typography
@@ -72,7 +72,7 @@ export default function Navbar() {
               fontFamily: 'ITC Century Handtooled Std Bd',
               marginLeft: '10px',
               fontWeight:"fontWeightBold",
-              fontSize: '65px'
+              fontSize: '68px'
             }}
           >
             CulturArte Agenda
