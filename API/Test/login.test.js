@@ -1,7 +1,7 @@
 //importa modulo supertest para fazer requisições HTTP
 import request from 'supertest'
 import { expect } from 'chai'
-import app from '../app.js'
+import app from '../Test/app.js'
 
 describe('POST /login', () => {
     it('deve retornar 200 OK e uma mensagem de sucesso para credenciais válidas', async () => {
