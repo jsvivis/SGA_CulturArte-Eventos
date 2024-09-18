@@ -65,14 +65,6 @@ export default function Manager() {
                   >
                     Pesquisar
                   </Button>
-                  <Button
-                    component={RouterLink}
-                    to="/gerenciarevento"
-                    variant="contained"
-                    color="secondary"
-                  >
-                    Gerenciar
-                  </Button>
                 </Box>
               </Paper>
             </Grid>
