@@ -103,6 +103,11 @@ Após iniciar o servidor do back-end e do front-end, você poderá acessar a apl
 http://localhost:5173/
 ```
 
+## Documentação
+
+Toda documentação do projeto se encontra dentro da pasta chamada Documentações:
+https://github.com/jsvivis/SGA_CulturArte-Eventos/tree/main/Documenta%C3%A7%C3%B5es
+
 ## Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
